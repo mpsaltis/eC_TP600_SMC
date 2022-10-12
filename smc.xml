@@ -1,0 +1,138 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<project xmlns="http://www.plcopen.org/xml/tc6_0200">
+  <fileHeader companyName="WAGO" productName="e!COCKPIT" productVersion="e!COCKPIT" creationDateTime="2022-10-12T15:24:50.162515" />
+  <contentHeader name="JSR_Sample_10062022.ecp" modificationDateTime="2022-10-12T15:16:09.7000612">
+    <coordinateInfo>
+      <fbd>
+        <scaling x="1" y="1" />
+      </fbd>
+      <ld>
+        <scaling x="1" y="1" />
+      </ld>
+      <sfc>
+        <scaling x="1" y="1" />
+      </sfc>
+    </coordinateInfo>
+    <addData>
+      <data name="http://www.3s-software.com/plcopenxml/projectinformation" handleUnknown="implementation">
+        <ProjectInformation />
+      </data>
+    </addData>
+  </contentHeader>
+  <types>
+    <dataTypes />
+    <pous>
+      <pou name="fb_SMC_EX260" pouType="functionBlock">
+        <interface>
+          <inputVars>
+            <variable name="sInput1">
+              <type>
+                <SINT />
+              </type>
+              <documentation>
+                <xhtml xmlns="http://www.w3.org/1999/xhtml"> SMC Inputs</xhtml>
+              </documentation>
+            </variable>
+            <variable name="bInput2">
+              <type>
+                <BYTE />
+              </type>
+            </variable>
+            <variable name="xOutA">
+              <type>
+                <array>
+                  <dimension lower="1" upper="16" />
+                  <baseType>
+                    <BOOL />
+                  </baseType>
+                </array>
+              </type>
+              <documentation>
+                <xhtml xmlns="http://www.w3.org/1999/xhtml"> Program Outputs</xhtml>
+              </documentation>
+            </variable>
+            <variable name="xOutB">
+              <type>
+                <array>
+                  <dimension lower="1" upper="16" />
+                  <baseType>
+                    <BOOL />
+                  </baseType>
+                </array>
+              </type>
+            </variable>
+          </inputVars>
+          <outputVars>
+            <variable name="sOutput1">
+              <type>
+                <SINT />
+              </type>
+              <documentation>
+                <xhtml xmlns="http://www.w3.org/1999/xhtml"> SMC Outputs</xhtml>
+              </documentation>
+            </variable>
+            <variable name="bOutput2">
+              <type>
+                <BYTE />
+              </type>
+            </variable>
+            <variable name="bOutput3">
+              <type>
+                <BYTE />
+              </type>
+            </variable>
+            <variable name="bOutput4">
+              <type>
+                <BYTE />
+              </type>
+            </variable>
+          </outputVars>
+        </interface>
+        <body>
+          <ST>
+            <xhtml xmlns="http://www.w3.org/1999/xhtml">sOutput1.0 := xOutA[1];
+sOutput1.1 := xOutB[1];
+sOutput1.2 := xOutA[2];
+sOutput1.3 := xOutB[2];
+sOutput1.4 := xOutA[3];
+sOutput1.5 := xOutB[3];
+sOutput1.6 := xOutA[4];
+sOutput1.7 := xOutB[4];
+
+bOutput2.0 := xOutA[5];
+bOutput2.1 := xOutB[5];
+bOutput2.2 := xOutA[6];
+bOutput2.3 := xOutB[6];
+bOutput2.4 := xOutA[7];
+bOutput2.5 := xOutB[7];
+bOutput2.6 := xOutA[8];
+bOutput2.7 := xOutB[8];
+
+bOutput3.0 := xOutA[9];
+bOutput3.1 := xOutB[9];
+bOutput3.2 := xOutA[10];
+bOutput3.3 := xOutB[10];
+bOutput3.4 := xOutA[11];
+bOutput3.5 := xOutB[11];
+bOutput3.6 := xOutA[12];
+bOutput3.7 := xOutB[12];
+
+bOutput4.0 := xOutA[13];
+bOutput4.1 := xOutB[13];
+bOutput4.2 := xOutA[14];
+bOutput4.3 := xOutB[14];
+bOutput4.4 := xOutA[15];
+bOutput4.5 := xOutB[15];
+bOutput4.6 := xOutA[16];
+bOutput4.7 := xOutB[16];
+</xhtml>
+          </ST>
+        </body>
+        <addData />
+      </pou>
+    </pous>
+  </types>
+  <instances>
+    <configurations />
+  </instances>
+</project>
