@@ -1,0 +1,38 @@
+{attribute 'qualified_only'}
+VAR_GLOBAL
+/////// (* IO Data *) ///////
+
+/////////////////////////// (Remote IO 1 [RIO_01]) ///////////////////////////
+
+ (* slot01 /// 750-1405 [16DI]*)
+RIO_01_S01_CH : ARRAY [1..16] OF BYTE;
+
+ (* slot02 /// 750-1405 [16DI]*)
+RIO_01_S02_CH : ARRAY [1..16] OF BYTE;
+
+ (* slot03 /// 750-1504 [16DO]*)
+RIO_01_S03_CH : ARRAY [1..16] OF BYTE;
+
+ (* slot04 /// 750-1504 [16DO]*)
+RIO_01_S04_CH : ARRAY[1..16] OF BYTE;
+
+ (* slot05 /// 750-455 [4AI]*)
+RIO_01_S05_CH : ARRAY[1..4] OF WORD ;
+
+(* slot06 /// 750-455 [4AI]*)
+RIO_01_S06_CH : ARRAY[1..4] OF WORD ; 
+
+(* slot07 /// 750-455 [4A0]*)
+RIO_01_S07_CH : ARRAY[1..4] OF WORD ; 
+
+(* slot08 /// 750-455 [4A0]*)
+RIO_01_S08_CH : ARRAY[1..4] OF WORD ;
+
+ /////////////////////////// (SMC) ///////////////////////////
+
+(* SMC_01 /// EX260-SEN2 [32DO]*)
+
+RIO_SMC101 : dutSMC_EX260;
+
+
+END_VAR
