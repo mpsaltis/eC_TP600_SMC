@@ -1,0 +1,17 @@
+TYPE dutSMC_EX260 :
+STRUCT
+(* Based on SMC EX260 x232 *)	
+
+(*Inputs /// SMC --> PLC *)
+	sInput1 : SINT;
+	bInput2 : BYTE;
+	xOutA : ARRAY [1..16] OF BOOL;
+	xOutB : ARRAY [1..16] OF BOOL;
+	
+(*Outputs /// PLC --> SMC *)
+	sOutput1 : SINT;
+	bOutput2 : BYTE;
+	bOutput3 : BYTE;
+	bOutput4 : BYTE;
+END_STRUCT
+END_TYPE
