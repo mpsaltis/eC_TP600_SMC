@@ -1,0 +1,118 @@
+PROGRAM IO_RIO01
+VAR
+	S01_xSpareDI : ARRAY[1..16] OF BOOL;
+	S02_xSpareDI : ARRAY[1..16] OF BOOL;
+	S03_xSpareDO : ARRAY[1..16] OF BOOL;
+	S04_xSpareDO : ARRAY[1..16] OF BOOL;
+	S05_wSpareAI : ARRAY[1..4] OF WORD;
+	S06_wSpareAI : ARRAY[1..4] OF WORD;
+	S07_wSpareAO : ARRAY[1..4] OF WORD;
+	S08_wSpareAO : ARRAY[1..4] OF WORD;
+		
+
+END_VAR
+
+/////////////////////////// (Remote IO 1 [RIO_01]) ///////////////////////////
+
+ (* slot01 /// 750-1405 [16DI]*)
+ 
+S01_xSpareDI[1] := GVL_IO.RIO_01_S01_CH[1].0;
+S01_xSpareDI[2] := GVL_IO.RIO_01_S01_CH[2].0;
+S01_xSpareDI[3] := GVL_IO.RIO_01_S01_CH[3].0;
+S01_xSpareDI[4] := GVL_IO.RIO_01_S01_CH[4].0;
+S01_xSpareDI[5] := GVL_IO.RIO_01_S01_CH[5].0;
+S01_xSpareDI[6] := GVL_IO.RIO_01_S01_CH[6].0;
+S01_xSpareDI[7] := GVL_IO.RIO_01_S01_CH[7].0;
+S01_xSpareDI[8] := GVL_IO.RIO_01_S01_CH[8].0;
+S01_xSpareDI[9] := GVL_IO.RIO_01_S01_CH[9].0;
+S01_xSpareDI[10] := GVL_IO.RIO_01_S01_CH[10].0;
+S01_xSpareDI[11] := GVL_IO.RIO_01_S01_CH[11].0;
+S01_xSpareDI[12] := GVL_IO.RIO_01_S01_CH[12].0;
+S01_xSpareDI[13] := GVL_IO.RIO_01_S01_CH[13].0;
+S01_xSpareDI[14] := GVL_IO.RIO_01_S01_CH[14].0;
+S01_xSpareDI[15] := GVL_IO.RIO_01_S01_CH[15].0;
+S01_xSpareDI[16] := GVL_IO.RIO_01_S01_CH[16].0;
+
+ (* slot02 /// 750-1405 [16DI]*)
+ 
+S02_xSpareDI[1] := GVL_IO.RIO_01_S02_CH[1].0;
+S02_xSpareDI[2] := GVL_IO.RIO_01_S02_CH[2].0;
+S02_xSpareDI[3] := GVL_IO.RIO_01_S02_CH[3].0;
+S02_xSpareDI[4] := GVL_IO.RIO_01_S02_CH[4].0;
+S02_xSpareDI[5] := GVL_IO.RIO_01_S02_CH[5].0;
+S02_xSpareDI[6] := GVL_IO.RIO_01_S02_CH[6].0;
+S02_xSpareDI[7] := GVL_IO.RIO_01_S02_CH[7].0;
+S02_xSpareDI[8] := GVL_IO.RIO_01_S02_CH[8].0;
+S02_xSpareDI[9] := GVL_IO.RIO_01_S02_CH[9].0;
+S02_xSpareDI[10] := GVL_IO.RIO_01_S02_CH[10].0;
+S02_xSpareDI[11] := GVL_IO.RIO_01_S02_CH[11].0;
+S02_xSpareDI[12] := GVL_IO.RIO_01_S02_CH[12].0;
+S02_xSpareDI[13] := GVL_IO.RIO_01_S02_CH[13].0;
+S02_xSpareDI[14] := GVL_IO.RIO_01_S02_CH[14].0;
+S02_xSpareDI[15] := GVL_IO.RIO_01_S02_CH[15].0;
+S02_xSpareDI[16] := GVL_IO.RIO_01_S02_CH[16].0;
+
+ (* slot03 /// 750-1504 [16DO]*)
+ 
+GVL_IO.RIO_01_S03_CH[1].0 := S03_xSpareDO[1];
+GVL_IO.RIO_01_S03_CH[2].0 := S03_xSpareDO[2];
+GVL_IO.RIO_01_S03_CH[3].0 := S03_xSpareDO[3];
+GVL_IO.RIO_01_S03_CH[4].0 := S03_xSpareDO[4];
+GVL_IO.RIO_01_S03_CH[5].0 := S03_xSpareDO[5];
+GVL_IO.RIO_01_S03_CH[6].0 := S03_xSpareDO[6];
+GVL_IO.RIO_01_S03_CH[7].0 := S03_xSpareDO[7];
+GVL_IO.RIO_01_S03_CH[8].0 := S03_xSpareDO[8];
+GVL_IO.RIO_01_S03_CH[9].0 := S03_xSpareDO[9];
+GVL_IO.RIO_01_S03_CH[10].0 := S03_xSpareDO[10];
+GVL_IO.RIO_01_S03_CH[11].0 := S03_xSpareDO[11];
+GVL_IO.RIO_01_S03_CH[12].0 := S03_xSpareDO[12];
+GVL_IO.RIO_01_S03_CH[13].0 := S03_xSpareDO[13];
+GVL_IO.RIO_01_S03_CH[14].0 := S03_xSpareDO[14];
+GVL_IO.RIO_01_S03_CH[15].0 := S03_xSpareDO[15];
+GVL_IO.RIO_01_S03_CH[16].0 := S03_xSpareDO[16];
+
+ (* slot04 /// 750-1504 [16DO]*)
+ 
+GVL_IO.RIO_01_S04_CH[1].0 := S04_xSpareDO[1];
+GVL_IO.RIO_01_S04_CH[2].0 := S04_xSpareDO[2];
+GVL_IO.RIO_01_S04_CH[3].0 := S04_xSpareDO[3];
+GVL_IO.RIO_01_S04_CH[4].0 := S04_xSpareDO[4];
+GVL_IO.RIO_01_S04_CH[5].0 := S04_xSpareDO[5];
+GVL_IO.RIO_01_S04_CH[6].0 := S04_xSpareDO[6];
+GVL_IO.RIO_01_S04_CH[7].0 := S04_xSpareDO[7];
+GVL_IO.RIO_01_S04_CH[8].0 := S04_xSpareDO[8];
+GVL_IO.RIO_01_S04_CH[9].0 := S04_xSpareDO[9];
+GVL_IO.RIO_01_S04_CH[10].0 := S04_xSpareDO[10];
+GVL_IO.RIO_01_S04_CH[11].0 := S04_xSpareDO[11];
+GVL_IO.RIO_01_S04_CH[12].0 := S04_xSpareDO[12];
+GVL_IO.RIO_01_S04_CH[13].0 := S04_xSpareDO[13];
+GVL_IO.RIO_01_S04_CH[14].0 := S04_xSpareDO[14];
+GVL_IO.RIO_01_S04_CH[15].0 := S04_xSpareDO[15];
+GVL_IO.RIO_01_S04_CH[16].0 := S04_xSpareDO[16];
+ 
+(* slot05 /// 750-455 [4AI]*)
+  
+S05_wSpareAI[1] := GVL_IO.RIO_01_S05_CH[1];
+S05_wSpareAI[2] := GVL_IO.RIO_01_S05_CH[2];
+S05_wSpareAI[3] := GVL_IO.RIO_01_S05_CH[3];
+S05_wSpareAI[4] := GVL_IO.RIO_01_S05_CH[4];
+
+(* slot06 /// 750-455 [4AI]*)
+S06_wSpareAI[1] := GVL_IO.RIO_01_S06_CH[1];
+S06_wSpareAI[2] := GVL_IO.RIO_01_S06_CH[2];
+S06_wSpareAI[3] := GVL_IO.RIO_01_S06_CH[3];
+S06_wSpareAI[4] := GVL_IO.RIO_01_S06_CH[4];
+
+(* slot07 /// 750-455 [4A0]*)
+
+GVL_IO.RIO_01_S07_CH[1] := S07_wSpareAO[1];
+GVL_IO.RIO_01_S07_CH[2] := S07_wSpareAO[2];
+GVL_IO.RIO_01_S07_CH[3] := S07_wSpareAO[3];
+GVL_IO.RIO_01_S07_CH[4] := S07_wSpareAO[4];
+
+(* slot08 /// 750-455 [4A0]*)
+
+GVL_IO.RIO_01_S08_CH[1] := S08_wSpareAO[1];
+GVL_IO.RIO_01_S08_CH[2] := S08_wSpareAO[2];
+GVL_IO.RIO_01_S08_CH[3] := S08_wSpareAO[3];
+GVL_IO.RIO_01_S08_CH[4] := S08_wSpareAO[4];
