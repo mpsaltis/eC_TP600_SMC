@@ -1,0 +1,83 @@
+PROGRAM IO_SMC_101
+VAR
+	SMC_101 : fb_SMC_EX260;
+	xSpareSO : ARRAY[1..32] OF BOOL;
+END_VAR
+
+SMC_101(
+	sInput1:= GVL_IO.SMC_01.sInput1, 
+	bInput2:= GVL_IO.SMC_01.bInput2, 
+	sOutput1=> GVL_IO.SMC_01.sOutput1, 
+	bOutput2=> GVL_IO.SMC_01.bOutput2, 
+	bOutput3=> GVL_IO.SMC_01.bOutput3, 
+	bOutput4=> GVL_IO.SMC_01.bOutput4);
+
+(* Read Input data from SMC *)
+SMC_101.sInput1;
+SMC_101.bInput2;
+	
+(* Map PLC Tags to Outputs *)	
+// Solenoid1
+SMC_101.xOutA[1] := xSpareSO[1]; 
+SMC_101.xOutB[1] := xSpareSO[2]; 
+
+// Solenoid2
+SMC_101.xOutA[2] := xSpareSO[3]; 
+SMC_101.xOutB[2] := xSpareSO[4]; 
+
+// Solenoid3
+SMC_101.xOutA[3] := xSpareSO[5]; 
+SMC_101.xOutB[3] := xSpareSO[6]; 
+
+// Solenoid4
+SMC_101.xOutA[4] := xSpareSO[7]; 
+SMC_101.xOutB[4] := xSpareSO[8];
+
+// Solenoid5
+SMC_101.xOutA[5] := xSpareSO[9]; 
+SMC_101.xOutB[5] := xSpareSO[10];
+
+// Solenoid6
+SMC_101.xOutA[6] := xSpareSO[11]; 
+SMC_101.xOutB[6] := xSpareSO[12];
+
+// Solenoid7
+SMC_101.xOutA[7] := xSpareSO[13]; 
+SMC_101.xOutB[7] := xSpareSO[14];
+
+// Solenoid8
+SMC_101.xOutA[8] := xSpareSO[15]; 
+SMC_101.xOutB[8] := xSpareSO[16];
+
+// Solenoid9
+SMC_101.xOutA[9] := xSpareSO[17]; 
+SMC_101.xOutB[9] := xSpareSO[18];
+
+// Solenoid10
+SMC_101.xOutA[10] := xSpareSO[19]; 
+SMC_101.xOutB[10] := xSpareSO[20];
+
+// Solenoid11
+SMC_101.xOutA[11] := xSpareSO[21]; 
+SMC_101.xOutB[11] := xSpareSO[22];
+
+// Solenoid12
+SMC_101.xOutA[12] := xSpareSO[23]; 
+SMC_101.xOutB[12] := xSpareSO[24];
+
+// Solenoid13
+SMC_101.xOutA[13] := xSpareSO[25]; 
+SMC_101.xOutB[13] := xSpareSO[26];
+
+// Solenoid14
+SMC_101.xOutA[14] := xSpareSO[27]; 
+SMC_101.xOutB[14] := xSpareSO[28];
+
+// Solenoid15
+SMC_101.xOutA[15] := xSpareSO[29]; 
+SMC_101.xOutB[15] := xSpareSO[30];
+
+// Solenoid16
+SMC_101.xOutA[16] := xSpareSO[31]; 
+SMC_101.xOutB[16] := xSpareSO[32];
+
